@@ -1,0 +1,130 @@
+body {
+    background-color: antiquewhite;
+    margin: auto;
+}
+
+main {
+    display: flex;
+    flex-direction: row;
+    align-items: stretch;
+    align-content: stretch;
+    min-height: 100vh;
+}
+
+.middle-column {
+    flex: 5;
+}
+
+.side-column {
+    flex: 1;
+    background-image: url("https://cdn.pixabay.com/photo/2016/12/11/13/14/grid-1899384_960_720.png");
+    background-repeat: repeat;
+    background-attachment: scroll;
+    background-size: contain;
+    min-height: 100vh;
+}
+
+.header {
+    background: transparent
+        url("https://images.pexels.com/photos/2260562/pexels-photo-2260562.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1")
+        no-repeat scroll 50%;
+    height: 400px;
+    position: relative;
+    margin-bottom: 8ex;
+}
+
+h1 {
+    text-align: center;
+    background-color: transparent;
+    vertical-align: bottom;
+    color: azure;
+    text-shadow: 2px 1px crimson;
+    font-size: calc(15px + 4vw);
+    position: absolute;
+    top: 72%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 100%;
+}
+
+#img-div {
+    display: block;
+    text-align: center;
+}
+
+#img-caption {
+    font-weight: lighter;
+    font-style: italic;
+    color: rgba(255, 0, 0, 0.692);
+    font-size: 1.5em;
+    text-shadow: 2px 1px burlywood;
+}
+
+#image {
+    display: block;
+    max-width: 100%;
+    width: calc(50px + 50vw);
+    border-radius: 50%;
+    margin-bottom: 50px;
+    margin-top: 10px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+h2 {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: darkred;
+    text-align: center;
+    font-size: calc(10px + 1.5vw);
+    text-shadow: 2px 1px burlywood;
+}
+
+#tribute-info {
+    font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+}
+
+ul {
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+    flex-wrap: wrap;
+    width: 90%;
+    margin: auto;
+}
+
+li {
+    font-size: 1.2em;
+    padding-left: 10px;
+    list-style: none;
+    list-style-position: outside;
+}
+
+li::before {
+    content: "";
+    display: inline-block;
+    height: 1em;
+    width: 1em;
+    margin-left: -2em;
+    background-image: url("https://upload.wikimedia.org/wikipedia/commons/f/f5/OpenMoji-color_1F353.svg");
+    vertical-align: middle;
+    padding: 7px;
+}
+
+#wiki-link {
+    color: rgba(255, 0, 0, 0.692);
+    text-align: right;
+    font-size: 1em;
+    font-weight: bold;
+    margin-top: 5ex;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-style: italic;
+    margin-bottom: 3ex;
+}
+
+a:link {
+    color: darkred;
+}
+
+a:visited {
+    color: rgb(194, 78, 78);
+}
